@@ -1,2 +1,10 @@
 <h1><%= @title %></h1>
 <p><%= @content %></p>
+
+<div class="">
+  <a href="/<%= @title %>/edit">Edit this Page</a>
+  <form class=""method="post" action="/<%= @title %>">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete This Page">
+  </form>
+</div>
